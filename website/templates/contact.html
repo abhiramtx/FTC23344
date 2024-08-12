@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Technical Turbulence - Contact{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="contact">
+            <div class="header-container">
+                <div class="line"></div>
+                <h1 class="header"><span class="emoji contact">CONTACT US</span></h1>
+                <div class="line"></div>
+            </div>        
+            <p class="info">you can find us on several platforms!</p>
+        <div class="contact-container">
+            <div class="card-container">
+                <a href="https://www.instagram.com/technicalturbulence23344/" target="_blank" class="card">
+                    <div class="card-content">
+                        <img src="{{ url_for('static', filename='images/insta5.png') }}" alt="Image 1">
+                    </div>
+                </a>
+                <a href="mailto:technicalturbulence@gmail.com" target="_blank" class="card">
+                    <div class="card-content">
+                        <img src="{{ url_for('static', filename='images/gmail.png') }}" alt="Image 2">
+                    </div>
+                </a>
+                <a href="https://youtube.com/@TechnicalTurbulenceFTC" target="_blank" class="card">
+                    <div class="card-content">
+                        <img src="{{ url_for('static', filename='images/youtubee.png') }}" alt="Image 3">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

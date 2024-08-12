@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}Technical Turbulence - Team{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="contributors">
+        <div class="team-info">
+        <div class="stats-container">
+            <div class="header-container3">
+                <h1 class="header"><span class="emoji stats">OUR STATS</span></h1>
+                <div class="line2"></div>
+            </div> 
+            
+            <div class="stats-cards">
+                <div class="stats-card">
+                    <h1 class="stats-card-header">1</h1>
+                    <p class="stats-card-info">year of robotics</p>
+                </div>
+                <div class="stats-card">
+                    <h1 class="stats-card-header">5</h1>
+                    <p class="stats-card-info">awards this season</p>
+                </div>
+                <div class="stats-card">
+                    <h1 class="stats-card-header">5</h1>
+                    <p class="stats-card-info">total awards won</p>
+                </div>
+                <div class="stats-card">
+                    <h1 class="stats-card-header">9</h1>
+                    <p class="stats-card-info">team members</p>
+                </div>
+            </div>
+
+            <button class="stats-button" onclick="window.location.href = '{{ url_for('competitions') }}' ; ">View our log</button>
+        </div>
+        </div>
+
+        <div class="header-container4">
+            <div class="line"></div>
+            <h1 class="header"><span class="emoji team">OUR TEAM</span></h1>
+            <div class="line"></div>
+        </div>        
+        <p class="info">meet our amazing team!</p>
+
+        <div class="members-container">
+
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Samuel</h2>
+                <p class="member-role">HARDWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/anish.png') }}">
+                <h2 class="member-name">Anish</h2>
+                <p class="member-role">HARDWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Daniel</h2>
+                <p class="member-role">HARDWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Stephen</h2>
+                <p class="member-role">HARDWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Keshav</h2>
+                <p class="member-role">SOFTWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Sujay</h2>
+                <p class="member-role">SOFTWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/abhi.png') }}">
+                <h2 class="member-name">Abhiram</h2>
+                <p class="member-role">SOFTWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Caitlin</h2>
+                <p class="member-role">ALUMNI; HARDWARE</p>
+            </div>
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Krith</h2>
+                <p class="member-role">OUTREACH</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+{% endblock %}

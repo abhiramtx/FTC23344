@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FTC Robotics{% endblock %}</title>
+    <!--Shared Files-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-container">
+            <li class="nav-item-left">
+                <a href="/"><img id="logo" src="{{ url_for('static', filename='images/logo.png') }}"></a>
+            </li>  
+            <li class="nav-item-center">
+                <a href="/">Home</a>
+            </li>
+            <li class="nav-item-center">
+                <a href="/contributors">Contributors</a>
+            </li>
+            <li class="nav-item-center">
+                <a href="/competitions">Competitions</a>
+            </li>
+            <li class="nav-item-center">
+                <a href="/sponsors">Sponsors</a>
+            </li>   
+            <li class="nav-item-center">
+                <a href="/contact">Contact</a>
+            </li>      
+        </ul>
+    </nav>
+
+    <!-- This is where child templates will insert their content -->
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

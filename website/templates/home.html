@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Technical Turbulence - Home{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="home">
+        <img class="bg" src="{{ url_for('static', filename='images/bg2.png') }}">
+        <div class="home-info">
+        <div class="header-container2">
+            <h1 class="header"><span class="emoji about">ABOUT US</span></h1>
+            <div class="line"></div>
+        </div>        
+        <h1 class="sub-header">Hello! We are Technical Turbulence.</h1>
+        <p class="sub-content">ftc team 23344 technical turbulence is a team based in plano, texas. our rookie year was 2023 and we hope to learn much more in the years to come. we want to grow our numbers and increase our outreach towards different communities so we can be the best that we can.</p>
+        <div class="stats-container">
+            <div class="header-container3">
+                <h1 class="header"><span class="emoji stats">OUR STATS</span></h1>
+                <div class="line2"></div>
+            </div> 
+            
+            <div class="stats-cards">
+                <div class="stats-card">
+                    <h1 class="stats-card-header">1</h1>
+                    <p class="stats-card-info">year of robotics</p>
+                </div>
+                <div class="stats-card">
+                    <h1 class="stats-card-header">5</h1>
+                    <p class="stats-card-info">awards this season</p>
+                </div>
+                <div class="stats-card">
+                    <h1 class="stats-card-header">5</h1>
+                    <p class="stats-card-info">total awards won</p>
+                </div>
+            </div>
+
+            <button class="stats-button" onclick="window.location.href = '{{ url_for('competitions') }}' ; ">View our log</button>
+        </div>
+
+        <div class="meet-our-team-container">
+            <img id="meet-our-team" src="{{ url_for('static', filename='images/team.png') }}">
+            <button class="bottom-center-button" onclick="window.location.href = '{{ url_for('contributors') }}' ; ">Meet Our Team</button>
+        </div>
+
+        <div class="header-container2">
+            <h1 class="header"><span class="emoji gallary">GALLERY</span></h1>
+            <div class="line"></div>
+        </div>    
+
+        <h1 class="sub-header">See what we've been up to.</h1>
+        <p class="sub-content">coming soon...</p>
+
+        <div class="header-container2">
+            <h1 class="header"><span class="emoji sponsors">SPONSORS</span></h1>
+            <div class="line"></div>
+        </div>    
+
+        <h1 class="sub-header">And we couldn't have done it without...</h1>
+
+        <div class="sponsors-container">
+                <img class="sponsors-card" src="{{ url_for('static', filename='images/ray.png') }}">
+                <img class="sponsors-card" src="{{ url_for('static', filename='images/cen3.png') }}">
+                <img class="sponsors-card" src="{{ url_for('static', filename='images/ti.png') }}">
+                <img class="sponsors-card" src="{{ url_for('static', filename='images/twc.png') }}">
+        </div>
+
+        <div class="sponsors-more-container">
+            <button type="button" id="sponsors-more-button" onclick="window.location.href = '{{ url_for('sponsors') }}' ; ">See more</button>
+        </div>
+
+        </div>
+        
+        <div class="footer">
+            <p class="footer-content">This website is open-source! View the code <a class="link-to-here" href="https://github.com/abhiramtx/FTC23344" target="_blank">here</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</body>
+
+{% endblock %}
