@@ -1,3 +1,8 @@
+# TODO
+# Fix all text sizes across all pages except competition log
+# Fix all top margins (do 20ish vh instead)
+
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -19,13 +24,17 @@ def robot():
 def competitions():
     return render_template('competitions.html')
 
-@app.route('/awards')
-def awards():
-    return render_template('awards.html')
+# @app.route('/awards')
+# def awards():
+#     return render_template('awards.html')
 
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/sponsors')
+def sponsors():
+    return render_template('sponsors.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

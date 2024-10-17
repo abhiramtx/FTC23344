@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Technical Turbulence - Sponsors{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="sponsors">
+        <div class="header-container">
+            <div class="line"></div>
+            <h1 class="header"><span class="emoji sponsors">OUR SPONSORS</span></h1>
+            <div class="line"></div>
+        </div>        
+        <p class="info">companies of various sizes sponsor our initiatives.</p>
+        
+        <div class="sponsors-container">
+            <div class="card-container">
+                <a href="https://www.rtx.com/" target="_blank" class="card-sponsors">
+                    <div class="card-content-sponsors">
+                        <img src="{{ url_for('static', filename='images/ray.png') }}" alt="Image 1">
+                    </div>
+                </a>
+                <a href="https://www.smilesinfrisco.com/" target="_blank" class="card-sponsors">
+                    <div class="card-content-sponsors">
+                        <img src="{{ url_for('static', filename='images/cen3.png') }}" alt="Image 2">
+                    </div>
+                </a>
+                <a href="https://www.ti.com/" target="_blank" class="card-sponsors">
+                    <div class="card-content-sponsors">
+                        <img src="{{ url_for('static', filename='images/ti.png') }}" alt="Image 3">
+                    </div>
+                </a>
+                <a href="https://www.twc.texas.gov/" target="_blank" class="card-sponsors">
+                    <div class="card-content-sponsors">
+                        <img src="{{ url_for('static', filename='images/twc.png') }}" alt="Image 3">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+{% endblock %}

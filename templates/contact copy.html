@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Communication{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="contact">
+            <div class="header-container">
+                <div class="line"></div>
+                <h1 class="header">CONTACT US</h1>
+                <div class="line"></div>
+            </div>        
+            <p class="info">you can find us on several platforms.</p>
+        <div class="contact-container">
+            <div class="contact-card">
+                <img class="card-img" src="{{ url_for('static', filename='images/insta4.png') }}">
+                <div class="card-txt-container">
+                <p class="card-txt"><a class="link" target="_blank" href="https://www.instagram.com/technicalturbulence23344/"> Follow Our Instagram </a></p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <img class="card-img" src="{{ url_for('static', filename='images/yt2.png') }}">
+                <div class="card-txt-container">
+                <p class="card-txt"><a class="link" target="_blank" href="https://youtube.com/@TechnicalTurbulenceFTC"> Find Us On YT </a></p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <img class="card-img" src="{{ url_for('static', filename='images/g3.jpg') }}">
+                <div class="card-txt-container">
+                <p class="card-txt"><a class="link" target="_blank" href="mailto:technicalturbulence@gmail.com"> Email Us </a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+{% endblock %}
