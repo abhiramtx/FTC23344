@@ -7,15 +7,23 @@
 <body>
     <div class="home">
         <div class="bg">
-        <img src="{{ url_for('static', filename='images/storm.png') }}">
+        <img src="{{ url_for('static', filename='images/tech2.gif') }}">
+        <div class="border-triangle"></div>
         </div>
         <div class="home-info">
         <div class="header-container2">
             <h1 class="header"><span class="emoji about">ABOUT US</span></h1>
             <div class="line"></div>
         </div>
-        <h1 class="sub-header">Hello! We are Technical Turbulence.</h1>
-        <p class="sub-content">FTC Team 23344 Technical Turbulence is a team based in Plano, Texas. Our rookie year was 2023 and we hope to learn much more in the years to come. We want to grow our numbers and increase our outreach towards different communities so we can be the best that we can.</p>
+        <h1 class="sub-header">👋 Hello! We are Technical Turbulence.</h1>
+        <div class="about-section-imgp">
+            <img src="{{ url_for('static', filename='images/main1.png') }}">
+        <p class="sub-content">Team 23344, Technical Turbulence, is a community-based returning team situated around Plano and Frisco Texas, comprising nine members primarily consisting of sophomores from different high schools. Our rookie year was 2023 and we hope to learn much more in the years to come. We want to grow our numbers and increase our outreach towards different communities so we can be the best that we can.</p>
+        </div>
+        <div class="about-section-imgp-l">
+        <p class="sub-content">Since we are designated as veterans this year, our members bring substantial experience from their involvement with FTC 12900 Quantum Claw and 22201 The Edge Robotics. Operating from our dedicated garage workshop, we uphold the fundamental values of FIRST, integrating Gracious Professionalism into our daily endeavors. </p>
+            <img src="{{ url_for('static', filename='images/robo.png') }}">
+        </div>
         <div class="stats-container">
             <div class="header-container3">
                 <h1 class="header"><span class="emoji stats">OUR STATS</span></h1>
@@ -40,25 +48,29 @@
             <button class="stats-button" onclick="window.location.href = '{{ url_for('competitions') }}' ; ">View our log</button>
         </div>
 
-        <div class="meet-our-team-container">
-            <img id="meet-our-team" src="{{ url_for('static', filename='images/team.png') }}">
-            <button class="bottom-center-button" onclick="window.location.href = '{{ url_for('contributors') }}' ; ">Meet Our Team</button>
-        </div>
 
         <div class="header-container2">
-            <h1 class="header"><span class="emoji gallary">GALLERY</span></h1>
+            <h1 class="header"><span class="emoji gallary">OUR MISSION</span></h1>
             <div class="line"></div>
         </div>
 
-        <h1 class="sub-header">See what we've been up to.</h1>
-        <p class="sub-content">coming soon...</p>
+        <h1 class="sub-header">✊ One team, one goal.</h1>
+        <p class="sub-content">We aim to show kids that with teamwork, creativity, and persistence, anyone can design, build, and code robots. Our mission is part of an outreach initiative to guide kids toward STEM and skill-building opportunities in robotics and technology. Through this unifying goal, we want to empower young students to learn, grow, and join FTC in the future.</p>
 
+            <div class="meet-our-team-container">
+                <img id="meet-our-team" src="{{ url_for('static', filename='images/team.png') }}">
+                <button class="bottom-center-button" onclick="window.location.href = '{{ url_for('contributors') }}' ; ">Meet Our Team</button>
+            </div>
+            
         <div class="header-container2">
             <h1 class="header"><span class="emoji sponsors">SPONSORS</span></h1>
             <div class="line"></div>
         </div>
 
-        <h1 class="sub-header">And we couldn't have done it without...</h1>
+        <p class="sub-content">We, FTC team Technical Turbulence, want to inspire the next generation by sharing our journey in robotics and the exciting world of FTC. By demonstrating our robot and showcasing the engineering behind it, we hope to spark curiosity in young minds about STEM fields.
+</p>
+
+        <h1 class="sub-header">❤️ And we couldn't have done it without...</h1>
 
         <div class="sponsors-container">
                 <img class="sponsors-card" src="{{ url_for('static', filename='images/ray.png') }}">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,9 @@
     <nav>
         <ul class="nav-container">
             <li class="nav-item-left">
-                <a href="/"><img id="logo" src="{{ url_for('static', filename='images/logo.png') }}"></a>
-            </li>  
-            
+                <a href="/"><img id="logo" src="{{ url_for('static', filename='images/logo2.png') }}"></a>
+            </li>
+
             <li class="nav-item-center">
                 <a href="/">Home</a>
             </li>
@@ -31,16 +32,47 @@
             </li>
             <li class="nav-item-center">
                 <a href="/contact">Contact</a>
-            </li>      
+            </li>
             <li class="nav-item-center">
                 <a href="https://hcb.hackclub.com/donations/start/technicalturbulence" target="_blank">Donate</a>
             </li>
         </ul>
     </nav>
+    <button class="menu-button">☰</button>
+    <div class="nav-side">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contributors">Contributors</a></li>
+            <li><a href="/competitions">Competitions</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="https://hcb.hackclub.com/donations/start/technicalturbulence" target="_blank">Donate</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navSide = document.querySelector('.nav-side');
+        const navLinks = document.querySelectorAll('.nav-side a'); // Select all links inside nav-side
 
+        menuButton.addEventListener('click', () => {
+            if (navSide.style.display === 'none' || navSide.style.display === '') {
+                navSide.style.display = 'flex'; // Show the nav-side with flex
+            } else {
+                navSide.style.display = 'none'; // Hide the nav-side
+            }
+        });
+
+        // Add event listeners to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navSide.style.display = 'none'; // Hide the nav-side
+            });
+        });
+    </script>
     <!-- This is where child templates will insert their content -->
     {% block content %}
     {% endblock %}
 
 </body>
+
 </html>
