@@ -7,40 +7,40 @@
 <body>
     <div class="home">
         <div class="bg">
-        <img src="{{ url_for('static', filename='images/tech2.gif') }}">
+        <img src="{{ url_for('static', filename='images/techturb.gif') }}">
         <div class="border-triangle"></div>
         </div>
+        <h1 class="heading"><span class="emoji about">About</span></h1>
+        <hr>
         <div class="home-info">
-        <div class="header-container2">
-            <h1 class="header"><span class="emoji about">ABOUT US</span></h1>
-            <div class="line"></div>
-        </div>
-        <h1 class="sub-header">👋 Hello! We are Technical Turbulence.</h1>
+        <h1 class="sub-header" id="cool-font">We are Technical Turbulence.</h1>
         <div class="about-section-imgp">
+            <div class="about-sec-img">
             <img src="{{ url_for('static', filename='images/main1.png') }}">
+            </div>
         <p class="sub-content">Team 23344, Technical Turbulence, is a community-based returning team situated around Plano and Frisco Texas, comprising nine members primarily consisting of sophomores from different high schools. Our rookie year was 2023 and we hope to learn much more in the years to come. We want to grow our numbers and increase our outreach towards different communities so we can be the best that we can.</p>
         </div>
-        <div class="about-section-imgp-l">
-        <p class="sub-content">Since we are designated as veterans this year, our members bring substantial experience from their involvement with FTC 12900 Quantum Claw and 22201 The Edge Robotics. Operating from our dedicated garage workshop, we uphold the fundamental values of FIRST, integrating Gracious Professionalism into our daily endeavors. </p>
+        <div class="about-section-imgp">
+            <!-- <div class="about-sec-img">
             <img src="{{ url_for('static', filename='images/robo.png') }}">
+            </div> -->
+        <p class="sub-content">Since we are designated as veterans this year, our members bring substantial experience from their involvement with FTC 12900 Quantum Claw and 22201 The Edge Robotics. Operating from our dedicated garage workshop, we uphold the fundamental values of FIRST, integrating Gracious Professionalism into our daily endeavors. </p>
         </div>
         <div class="stats-container">
-            <div class="header-container3">
-                <h1 class="header"><span class="emoji stats">OUR STATS</span></h1>
-                <div class="line2"></div>
-            </div>
+            <h1 class="heading"><span class="emoji stats">Our stats</span></h1>
+            <hr>
 
             <div class="stats-cards">
                 <div class="stats-card">
-                    <h1 class="stats-card-header">1</h1>
+                    <h1 class="stats-card-header">2</h1>
                     <p class="stats-card-info">year of robotics</p>
                 </div>
                 <div class="stats-card">
-                    <h1 class="stats-card-header">5</h1>
+                    <h1 class="stats-card-header">2</h1>
                     <p class="stats-card-info">awards this season</p>
                 </div>
                 <div class="stats-card">
-                    <h1 class="stats-card-header">5</h1>
+                    <h1 class="stats-card-header">7</h1>
                     <p class="stats-card-info">total awards won</p>
                 </div>
             </div>
@@ -48,25 +48,26 @@
             <button class="stats-button" onclick="window.location.href = '{{ url_for('competitions') }}' ; ">View our log</button>
         </div>
 
-
-        <div class="header-container2">
-            <h1 class="header"><span class="emoji gallary">OUR MISSION</span></h1>
-            <div class="line"></div>
         </div>
+        <h1 class="heading"><span class="emoji gallary">Our mission</span></h1>
+        <hr>
+        <div class="home-info">
 
         <h1 class="sub-header">✊ One team, one goal.</h1>
-        <p class="sub-content">We aim to show kids that with teamwork, creativity, and persistence, anyone can design, build, and code robots. Our mission is part of an outreach initiative to guide kids toward STEM and skill-building opportunities in robotics and technology. Through this unifying goal, we want to empower young students to learn, grow, and join FTC in the future.</p>
+        <p class="sub-content">We aim to show individuals that with teamwork, creativity, and persistence, anyone can design, build, and code robots. Our mission is part of an outreach initiative to guide young minds toward STEM and skill-building opportunities in robotics and technology. Through this unifying goal, we want to empower young students to learn, grow, and join FTC in the future.</p>
 
             <div class="meet-our-team-container">
                 <img id="meet-our-team" src="{{ url_for('static', filename='images/team.png') }}">
                 <button class="bottom-center-button" onclick="window.location.href = '{{ url_for('contributors') }}' ; ">Meet Our Team</button>
             </div>
-            
-        <div class="header-container2">
-            <h1 class="header"><span class="emoji sponsors">SPONSORS</span></h1>
-            <div class="line"></div>
-        </div>
 
+        </div>
+        
+            
+            <h1 class="heading"><span class="emoji sponsors">Sponsors</span></h1>
+            <hr>
+
+        <div class="home-info">
         <p class="sub-content">We, FTC team Technical Turbulence, want to inspire the next generation by sharing our journey in robotics and the exciting world of FTC. By demonstrating our robot and showcasing the engineering behind it, we hope to spark curiosity in young minds about STEM fields.
 </p>
 

@@ -7,23 +7,21 @@
 <body>
     <div class="contributors">
         <div class="team-info">
-        <div class="stats-container">
-            <div class="header-container3">
-                <h1 class="header"><span class="emoji stats">OUR STATS</span></h1>
-                <div class="line2"></div>
-            </div> 
+        <div class="stats-container" id="stats2">
+            <h1 class="heading"><span class="emoji stats">Our stats</span></h1>
+            <hr>
             
             <div class="stats-cards">
                 <div class="stats-card">
-                    <h1 class="stats-card-header">1</h1>
+                    <h1 class="stats-card-header">2</h1>
                     <p class="stats-card-info">year of robotics</p>
                 </div>
                 <div class="stats-card">
-                    <h1 class="stats-card-header">5</h1>
+                    <h1 class="stats-card-header">2</h1>
                     <p class="stats-card-info">awards this season</p>
                 </div>
                 <div class="stats-card">
-                    <h1 class="stats-card-header">5</h1>
+                    <h1 class="stats-card-header">7</h1>
                     <p class="stats-card-info">total awards won</p>
                 </div>
                 <div class="stats-card">
@@ -35,12 +33,19 @@
             <button class="stats-button" onclick="window.location.href = '{{ url_for('competitions') }}' ; ">View our log</button>
         </div>
         </div>
-
-        <div class="header-container4">
-            <div class="line"></div>
-            <h1 class="header"><span class="emoji team">OUR TEAM</span></h1>
-            <div class="line"></div>
-        </div>        
+        <br>
+        <h1 class="heading"><span class="emoji sponsors" id="team">Our mentor and coach</span></h1>
+        <hr>
+        <p class="info">❤️ meet our amazing coach and mentor! ❤️</p>
+        <div class="members-container">
+            <div class="member-card">
+                <img class="member-image" src="{{ url_for('static', filename='images/default.jpg') }}">
+                <h2 class="member-name">Mr. Kruger</h2>
+                <p class="member-role">COACH / MENTOR</p>
+            </div>
+        </div>
+        <h1 class="heading"><span class="emoji team" id="team">Our team</span></h1>
+        <hr>      
         <p class="info">⭐ meet our amazing team! ⭐</p>
 
         <div class="members-container">
