@@ -11,6 +11,11 @@ body {
     overflow-x: hidden;
 }
 
+.about-sec-img img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .menu-button {
     display: none;
     /* border: 0.25vh solid white; */
@@ -27,7 +32,7 @@ body {
     /* Makes it circular */
     cursor: pointer;
     position: fixed;
-    z-index: 1000000000000000000;
+    z-index: 1000000000000000000000000000000000000000000000000000000000000000000000;
     top: 4%;
     left: 50%;
     transform: translateX(-50%);
@@ -56,6 +61,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow-y: auto;
+    z-index: 1000000000000000000000000000000000000000000000000000000000000000000000;
 }
 
 .nav-side ul {
@@ -91,6 +97,7 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    z-index: 1000000000000000000000000000000000000000000000000000000000000000000000;
 }
 
 .nav-container {
@@ -100,7 +107,7 @@ nav {
     list-style: none;
     gap: 1%;
     padding: 1%;
-    width: 56vw;
+    width: 85vw;
     height: 6vh;
     border-radius: 50vh;
     background-color: rgba(0, 0, 0, .25);
@@ -118,20 +125,24 @@ nav {
         display: none;
     }
 
+    .buttons {
+        top: 80%!important;
+    }
+
     .menu-button {
         display: flex;
         display: block !important;
     }
 
     .competition-header {
-        flex-direction: column!important;
-        gap: 0%!important;
-        margin: 0%!important;
-        padding: 0%!important;
+        flex-direction: column !important;
+        gap: 0% !important;
+        margin: 0% !important;
+        padding: 0% !important;
     }
 
     .middle-dot {
-        display: none!important;
+        display: none !important;
     }
 
     nav {
@@ -192,7 +203,7 @@ nav {
 
     .sponsors-card {
         margin-top: 3% !important;
-        max-width: 85vw !important;
+        max-width: 85% !important;
         max-height: 25vw !important;
         margin-bottom: 15% !important;
     }
@@ -293,6 +304,10 @@ nav {
     margin-top: 5%;
 }
 
+#robo {
+    margin-top: 15%;
+}
+
 #team {
     margin-top: 5vh;
 }
@@ -333,6 +348,14 @@ nav {
     color: rgb(250, 250, 250);
     font-family: sans-serif;
     padding-left: 10%;
+}
+
+.heading2 {
+    font-size: 1.5rem;
+    color: rgb(250, 250, 250);
+    font-family: sans-serif;
+    padding-left: 10%;
+    padding-top: 5%;
 }
 
 hr {
@@ -411,6 +434,7 @@ hr {
     font-style: normal;
     font-size: 1.75rem;
     text-align: center;
+    opacity: 1;
 }
 
 .card-container {
@@ -431,7 +455,7 @@ hr {
     display: inline-block;
     position: relative;
     transition: transform 0.3s ease;
-    border: white solid .25vh;
+    border: #616161 solid .25vh;
 }
 
 .card-content {
@@ -462,6 +486,15 @@ hr {
     justify-content: center;
 }
 
+.rob {
+    margin: 0;
+    padding-top: 8vh;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    justify-content: center;
+}
+
 .competitions {
     margin: 0;
     padding: 0;
@@ -481,13 +514,42 @@ hr {
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 20%;
+    position: absolute;
+    top: 73%;
+    z-index: 1000000;
+}
+
+.buttons button {
+    height: 65px;
+    width: 65px;
+    box-sizing: border-box;
+    color: #616161;
+    background-color: #0f0f0f;
+    border: 0.25vh solid #616161;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: white;
+}
+
 .bg img {
     width: 100%;
     height: 100%;
     /* object-fit: cover;
     overflow: hidden; */
     transition: .5s;
-    filter: brightness(0.85);
+    filter: brightness(1.0);
 }
 
 .bg::after {
@@ -574,7 +636,7 @@ hr {
 }
 
 .stats-container {
-    border: 0.25vh white solid;
+    border: 0.25vh #616161 solid;
     width: 100%;
     background-color: rgb(15, 15, 15);
     border-radius: 1.5vh;
@@ -723,7 +785,7 @@ hr {
     /* display: inline-block; */
     position: relative;
     transition: transform 0.3s ease;
-    border: white solid .25vh;
+    border: #616161 solid .25vh;
 }
 
 .card-content-sponsors {
@@ -739,7 +801,7 @@ hr {
     height: auto;
     transition: transform 0.3s ease;
     filter: brightness(0) invert(1);
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .sponsors-container {
@@ -750,6 +812,14 @@ hr {
     margin-left: 4%;
 }
 
+#sponnnnn {
+    background-color: #0f0f0f;
+    border: 0.25vh solid #616161;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+} 
+
 .card-sponsors:hover img {
     transform: scale(1.2);
     opacity: 1;
@@ -758,6 +828,7 @@ hr {
 .contributors {
     margin: 0;
     padding: 0;
+    margin-bottom: 5%;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -775,7 +846,7 @@ hr {
 
 .meet-our-team-container {
     position: relative;
-    border: 0.25vh white solid;
+    border: 0.25vh #616161 solid;
     width: 100%;
     border-radius: 1.5vh;
     margin-top: 10%;
@@ -790,6 +861,7 @@ hr {
     margin: 0;
     padding: 0;
     filter: brightness(.75);
+    border-radius: 7px;
     transition: 5s;
 }
 
@@ -915,13 +987,17 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     gap: 3%;
+    background-color: #0f0f0f;
+    border: #616161 0.25vh solid;
     /* border-top: white 0.25vh solid;
     border-right: white 0.25vh solid;
     border-left: white 0.25vh solid;
     border-top-right-radius: 1.5vh;
     border-top-left-radius: 1.5vh; */
+    margin-bottom: 3%;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -971,6 +1047,8 @@ hr {
     background-color: rgb(15, 15, 15);
     border-radius: 10px;
     border: white 0.25vh solid;
+    position: relative;
+    overflow: hidden;
 }
 
 .member-card:hover {
@@ -1104,9 +1182,16 @@ hr {
 .competition-card {
     width: 100%;
     /* background-color: lightgrey; */
-    margin: 0;
-    padding: 0;
+    padding-left: 5%;
     position: relative;
+    background-color: #0F0F0F;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: #616161 0.25vh solid;
+    margin-top: 3%;
 }
 
 .competition-card-img {
@@ -1217,11 +1302,26 @@ span.about::after {
     right: -1%;
 }
 
+span.robots::before,
+span.robots::after {
+    content: "🤖";
+    font-size: 2.5vh;
+    top: 14%;
+    left: 8%;
+}
+
+span.robots::after {
+    top: revert;
+    left: revert;
+    bottom: 75%;
+    right: 82%;
+}
+
 span.stats::before,
 span.stats::after {
     content: "📊";
     font-size: 2.5vh;
-    top: -5%;
+    top: -1%;
     left: -1%;
 }
 
@@ -1321,17 +1421,19 @@ span.emoji:active::after {
     height: 75vh;
     overflow: hidden;
     transition: .5s;
-    border: 2px rgb(250, 250, 250) solid;
+    border: 2px rgb(97, 97, 97) solid;
     border-radius: 10px;
     margin-bottom: 5%;
+    /* padding: 2%; */
 }
 
 .about-section-imgp img {
     width: 100%;
     transition: .5s;
-    height: auto;
+    max-height: 100%;
     ;
     object-fit: cover;
+    border-radius: 7px;
 }
 
 .about-section-imgp p {
@@ -1369,9 +1471,9 @@ span.emoji:active::after {
     border: 2px white solid;
 }
 
-.about-section-imgp img:hover {
+/* .about-section-imgp img:hover {
     transform: scale(1.025);
-}
+} */
 
 .about-section-imgp-l img:hover {
     transform: scale(1.025);
@@ -1395,6 +1497,20 @@ span.emoji:active::after {
         margin: 0;
         text-align: center;
         margin-bottom: 5%;
+    }
+
+    .robo-inner {
+        flex-direction: column !important;
+    }
+
+    .robo-card {
+        width: 100% !important;
+        height: 40vh !important;
+    }
+
+    .robo-card img {
+        width: 100% !important;
+        height: auto !important;
     }
 
     .contact-content {
@@ -1445,3 +1561,98 @@ span.emoji:active::after {
     }
 }
 
+#robo {
+    margin-top: 5%;
+}
+
+.robots-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5%;
+
+}
+
+.robots-inner {
+    width: 84%;
+    gap: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.robo-card img {
+    height: 100%;
+    transition: .1s;
+    filter: brightness(0.75);
+}
+
+.robo-card img:hover {
+    transform: scale(1.025);
+}
+
+.robo-card {
+    width: 30.333333333333333333%;
+    height: 50vh;
+    background-color: rgb(15, 15, 15);
+    border-radius: 1.5vh;
+    overflow: hidden;
+    margin-bottom: 4%;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+    border: white solid .25vh;
+}
+
+/* .robo-card-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    background: linear-gradient(to top, black, rgba(5, 8, 28, 0));
+    pointer-events: none;
+    z-index: 1;
+} */
+
+.robo-card p {
+    z-index: 10000000000 !important;
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+.robo-card-txt {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+    background: none;
+    opacity: 0.90;
+}
+
+.robo-card-name {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Orbitron", serif;
+    font-weight: 700;
+}
+
+.robo-card-desc {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Orbitron", serif;
+    font-weight: 700;
+    opacity: 0.70;
+}

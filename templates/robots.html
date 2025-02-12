@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Technical Turbulence - Home{% endblock %}
+
+{% block content %}
+
+<body>
+  <div class="rob">
+    <h1 class="heading" id="spon"><span class="emoji robots">Robots</span></h1>
+    <hr>
+    <p class="info">🤖 we've built and designed several robots. 🤖</p
+  </div>
+
+  <div class="robots-container">
+    <div class="robots-inner">
+
+      <a class="robo-card" href="https://www.youtube.com/watch?v=dQw4w9WgXc">
+        <div class="robo-card-img">
+          <img src="{{ url_for('static', filename='images/abyss.png') }}">
+        </div>
+          <div class="robo-card-txt">
+            <p class="robo-card-name">Abyss</p>
+            <p class="robo-card-desc">2024 · INTO THE DEEP</p>
+          </div>
+        </a>
+      
+      <a class="robo-card" href="/robots/storm">
+      <div class="robo-card-img">
+        <img src="{{ url_for('static', filename='images/storm222222.png') }}">
+      </div>
+        <div class="robo-card-txt">
+          <p class="robo-card-name">Storm</p>
+          <p class="robo-card-desc">2023 · CENTERSTAGE</p>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</body>
+
+{% endblock %}

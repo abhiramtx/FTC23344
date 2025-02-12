@@ -36,5 +36,13 @@ def contact():
 def sponsors():
     return render_template('sponsors.html')
 
+@app.route('/robots')
+@app.route('/robots/<type>')
+def robots(type=None):
+    if type is None:
+        return render_template('robots.html')
+    else:
+        return render_template(f'robots-{type}.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
